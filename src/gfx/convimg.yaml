@@ -1,0 +1,50 @@
+palettes:
+  - name: global_palette
+    fixed-entries:
+      - color: {index: 0, r: 0, g: 0, b: 0}
+      - color: {index: 1, r: 255, g: 255, b: 255}
+      - color: {index: 2, r: 87, g: 185, b: 255} 
+    images: automatic
+
+converts:
+  - name: sprites
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - borderBottomRight.png
+      - borderTopRight.png 
+      - borderTopLeft.png 
+      - borderBottomLeft.png 
+      - borderTileLeft.png
+      - borderTileRight.png 
+      - borderTileDown.png 
+      - borderTileUp.png
+      - grayTile.png
+      - purpleTile.png 
+      - whiteTile.png 
+      - cyanTile.png 
+      - orangeTile.png 
+      - yellowTile.png 
+      - blueTile.png 
+      - redTile.png 
+      - grassTile.png 
+      - boardTileEmpty.png
+      - titleText.png
+      - pointer.png  	
+      - selectorBorder.png	
+      - backButtonBorder.png	
+      - star.png
+      - goldButton.png
+      - silverButton.png 
+      - bronzeButton.png
+      - lockedButton.png
+      - endScreen.png 
+
+outputs:
+  - type: c
+    include-file: gfx.h
+    palettes:
+      - global_palette
+    converts:
+      - sprites
+
